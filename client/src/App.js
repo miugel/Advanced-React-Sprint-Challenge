@@ -1,6 +1,7 @@
 import React from 'react';
 import axios from 'axios';
-import Table from './Table';
+import Table from './components/Table';
+import DarkModeButton from './components/DarkModeButton';
 import './index.css';
 
 class App extends React.Component {
@@ -27,7 +28,7 @@ class App extends React.Component {
 	render() {
 		return (
 			<div className='app'>
-				<p className='dark-mode-button'>dark mode</p>
+				<DarkModeButton/>
 				<h1>Top Google Searches</h1>
 				<h2>2019 Women's World Cup</h2>
 				<Table state={this.state}/>

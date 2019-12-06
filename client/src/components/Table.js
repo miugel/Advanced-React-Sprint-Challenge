@@ -9,7 +9,7 @@ const Table = props => (
             <p>Searches</p>
         </div>
         {props.state.players.map(item => (
-            <div className='table-row'>
+            <div key={item.id} className='table-row'>
                 <p>{item.id + 1}</p>
                 <p>{item.name}</p>
                 <p>{item.country}</p>
