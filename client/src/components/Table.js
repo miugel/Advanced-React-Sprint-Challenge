@@ -2,7 +2,7 @@ import React from 'react';
 
 const Table = props => (
     <div className='table'>
-        <div className='table-heading'>
+        <div className='table-heading' data-testid='table-heading'>
             <p>Rank</p>
             <p>Name</p>
             <p>Country</p>

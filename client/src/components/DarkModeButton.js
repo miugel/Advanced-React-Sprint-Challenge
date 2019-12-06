@@ -10,7 +10,7 @@ const DarkModeButton = () => {
     };
     
     return (
-        <p className='dark-mode-button' onClick={toggleMode}>dark mode</p>
+        <p className='dark-mode-button' onClick={toggleMode} data-testid='dark-mode-button'>dark mode</p>
     )
 };
 

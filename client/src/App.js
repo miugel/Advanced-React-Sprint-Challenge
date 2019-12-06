@@ -13,17 +13,16 @@ class App extends React.Component {
 	}
 
 	componentDidMount() {
-		axios.get('http://localhost:5000/api/players')
-			.then(response => {
-				console.log(response);
-				this.setState({
+		axios.get("http://localhost:5000/api/players")
+		 	.then(response => {
+		   		this.setState({
 					players: response.data
-				})
-			})
+				});
+		 	})
 			.catch(error => {
 				console.log(error);
-			})
-	}
+			});
+	};
 
 	render() {
 		return (
